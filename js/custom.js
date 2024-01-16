@@ -109,3 +109,15 @@ function openLightBox(){
   gr.click()
 }
 //End of lightbox
+
+function sendEmail() {
+    Email.send({
+        SecureToken: "189ce6a2-9ed0-4169-adf5-8ed5d5b0f831",  // Replace with your secure token
+        To: 'subhajitsinha44@gmail.com',
+        From: 'subhajitsinha44@gmail.com',
+        Subject: 'Test Email',
+        Body: 'This is a test email'
+    }).then(
+        message => alert(message)
+    );
+}
